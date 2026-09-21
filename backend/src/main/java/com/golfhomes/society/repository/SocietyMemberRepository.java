@@ -1,0 +1,1 @@
+package com.golfhomes.society.repository; import com.golfhomes.society.model.SocietyMember; import org.springframework.data.jpa.repository.JpaRepository; public interface SocietyMemberRepository extends JpaRepository<SocietyMember,Long> {}

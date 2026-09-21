@@ -1,0 +1,1 @@
+package com.golfhomes.society.repository; import com.golfhomes.society.model.Vote; import org.springframework.data.jpa.repository.JpaRepository; public interface VoteRepository extends JpaRepository<Vote,Long> {}

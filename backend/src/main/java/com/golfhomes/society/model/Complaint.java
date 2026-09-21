@@ -1,0 +1,2 @@
+package com.golfhomes.society.model; import jakarta.persistence.*; import lombok.*; import java.math.BigDecimal; import java.time.LocalDateTime;
+@Entity @Getter @Setter @NoArgsConstructor public class Complaint { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; String flatNumber,title,assignedTo,status="OPEN"; @Column(length=3000) String description; BigDecimal workAmount=BigDecimal.ZERO; LocalDateTime updatedAt=LocalDateTime.now(); }

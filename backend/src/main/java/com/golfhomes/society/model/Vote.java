@@ -1,0 +1,2 @@
+package com.golfhomes.society.model; import jakarta.persistence.*; import lombok.*; import java.time.LocalDateTime;
+@Entity @Getter @Setter @NoArgsConstructor @Table(name="votes",uniqueConstraints=@UniqueConstraint(columnNames={"pollId","flatNumber"})) public class Vote { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long pollId; String flatNumber,optionValue; LocalDateTime votedAt; }

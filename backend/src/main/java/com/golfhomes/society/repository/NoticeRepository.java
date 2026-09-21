@@ -1,0 +1,1 @@
+package com.golfhomes.society.repository; import com.golfhomes.society.model.Notice; import org.springframework.data.jpa.repository.JpaRepository; public interface NoticeRepository extends JpaRepository<Notice,Long> {}
